@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "e3e599f7-9e95-43d1-a7f3-0e8bda82a397",
+		"name": "jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18314473"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/demo-controller",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiaWF0IjoxNzA4NTk4ODY1LCJleHAiOjE3MDg2MDAzMDV9.AZbBs07-ZKIAhz-GgQqKyHncv3q1KNSKMPzKWAmIpcc"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/v1/demo-controller"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"test\",\n    \"lastname\": \"test\",\n    \"email\": \"test@mail.com\",\n    \"password\": \"test1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/v1/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/auth/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@mail.com\",\n    \"password\": \"test1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/v1/auth/authenticate"
+			},
+			"response": []
+		}
+	]
+}
