@@ -20,4 +20,5 @@ create table _user (
 
 ## Reference
 **PostgreSQL in docker:** `https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/` \
-**Secure your API with JWT Token:** `https://www.youtube.com/watch?v=BVdQ3iuovg0&t=4052s`
+**Secure your API with JWT Token:** `https://www.youtube.com/watch?v=BVdQ3iuovg0&t=4052s` \
+**Check value JWT token:** `https://jwt.io/`
