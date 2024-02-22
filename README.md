@@ -16,7 +16,7 @@ create table _user (
 );
 ```
 3. Start this project.
-4. Test API with Postman collection.
+4. Test API with [Postman collection](jwt.postman_collection.json).
 
 ## Reference
 **PostgreSQL in docker:** `https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/` \
